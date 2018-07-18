@@ -1,6 +1,7 @@
 body{
   margin: 0px;
   background-color: #efefef;
+
 }
 .header{
   background: rgb(39,59,71);
@@ -8,6 +9,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content:space-between;
+  height: 50px;
 }
 .logotipo{
   margin: 0px;
@@ -24,30 +26,39 @@ body{
   display: flex;
   justify-content: flex-end;
   list-style: none;
+
+
 }
-.menu .menuline{
-  border-right-color: rgb(255,255,255);
-  border-right-width: 1px;
-  border-right-style: solid;
+.menu li:after{
+  content: "|";
+  display:inline-block;
+  margin: 0px 10px;
+  color: white;
+
+}
+
+.menu li:last-child:after{
+  display: none;
 }
 .menu ul a:hover {
 	border-top: 5px solid #7DCD40;
 }
 
 .menu ul a{
-  font-size: 22px;
-  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
-  padding: 14px 10px 10px 10px;
+  padding: 0px 5px;
   font-weight: bold;
+  color: white;
 }
 
 .button{
   margin-left: 20px;
   border-radius: 12px;
-  padding: 7px 12px;
-  font-size: 18px;
-  font-size: 28px;
+  padding: 5px 12px;
+  font-size: 22px;
   color: white;
   cursor: pointer;
   background: linear-gradient(to left, #fe344e,#ff7250);
@@ -55,6 +66,7 @@ body{
 }
 .portada{
  background-color: #efefef;
+
 }
 
 .formulario
@@ -87,14 +99,15 @@ body{
   background-image: url(../images/main.jpg);
   background-size: cover;
   height: 540px;
+  position: relative;
 }
 
 .caja{
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 27px 23px 23px 23px;
   width: 50%;
-  top:250px;
+  bottom: 10px;
   left: 10px;
   border-radius: 6px;
 }
