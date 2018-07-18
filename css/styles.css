@@ -13,8 +13,7 @@ body{
 }
 .logotipo{
   margin: 0px;
-  padding: 0px;
-  padding-left: 10px;
+  padding: 0px 10px;
 }
 
 .menu{
@@ -24,34 +23,46 @@ body{
 }
 .menu ul{
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
   list-style: none;
-
-
 }
+
+.menu li
+{
+  display: inline-block;
+  height: 50px;
+ /* display: flex; */
+/* flex-direction: row;  */
+/* display: inline-block; */
+/* align-items: center; */
+}
+
 .menu li:after{
+  /* display: inline-block; */
+  height: 50px;
   content: "|";
-  display:inline-block;
   margin: 0px 10px;
   color: white;
-
 }
 
 .menu li:last-child:after{
   display: none;
 }
-.menu ul a:hover {
-	border-top: 5px solid #7DCD40;
-}
 
-.menu ul a{
+.menu ul li a{
+   /* display:flex;
+  align-items: center; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 18px;
   text-decoration: none;
-  padding: 0px 5px;
-  font-weight: bold;
   color: white;
+  height: 20px;
+}
+
+.menu ul li a:hover {
+	border-top: 5px solid #7DCD40;
 }
 
 .button{
