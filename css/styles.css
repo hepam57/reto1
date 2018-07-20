@@ -66,6 +66,10 @@ body{
   box-shadow: inset 0px 5px #7DCD40;
 }
 
+.is_active {
+  box-shadow: inset 0px 5px red;
+}
+
 .button{
   margin-left: 20px;
   border-radius: 12px;
@@ -75,6 +79,10 @@ body{
   cursor: pointer;
   background: linear-gradient(to left, #fe344e,#ff7250);
   text-decoration: none;
+}
+.button:active{
+  transform: scale(0.9);
+  transition: 0.2s;
 }
 .portada{
  background-color: #efefef;
